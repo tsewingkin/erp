@@ -1,0 +1,12 @@
+<!--miniprogram/pages/login/login.wxml-->
+<view class='container'>
+
+  <view class='login'>
+    <!-- 密码框 -->
+    <input password bindinput="bindPwdInput" placeholder=" 输入密码 " />
+    <button open-type="getUserInfo" bindgetuserinfo='onLoginTap'> 登录 </button>
+    <view wx:if='{{show}}'>
+      <button type='primary'> 申请权限 </button>
+    </view>
+  </view>
+</view>
